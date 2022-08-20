@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main_div{
+            background-color: #2A0944;
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .main_div h1{
+            font-family: 'Abril Fatface', cursive;
+            color: #3FA796;
+            font-size: 60px;
+        }
+        .dice_div{
+            display:flex;
+            width: 100%;
+            justify-content:space-around;
+            align-items:center;
+        }
+        .dice_div div{
+            text-align: center;
+        }
+        .dice_div div h5{
+            font-family: cursive;
+            color: white;
+            font-size: 25px;
+        }
+        .playbtn button{
+            padding: 10px 20px;
+            background-color: #3FA796;
+            color: white;
+        }
+        .playbtn button:hover{
+            background-color: #FEC260;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h1 id="result">Click On Play Button</h1>
+        <div class="dice_div">
+            <div class="player1">
+                <h5>Player 1</h5>
+                <img src="./images/dice1.png" id="player1">
+            </div>
+            <div class="player2">
+                <h5>Player 2</h5>
+                <img src="./images/dice1.png" id="player2">
+            </div>
+        </div>
+        <div class="playbtn">
+            <button onclick="play()">Play</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
